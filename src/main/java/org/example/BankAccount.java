@@ -34,4 +34,13 @@ public class BankAccount {
         if (balance - amount < minimumBalance) throw new IllegalArgumentException("Insufficient funds for this withdrawal.");
         balance -= amount;
     }
+
+    @Override
+    public String toString() {
+        return "BankAccount{" +
+                "balance=" + balance +
+                ", minimumBalance=" + minimumBalance +
+                ", accountHolderName='" + accountHolderName + '\'' +
+                '}';
+    }
 }

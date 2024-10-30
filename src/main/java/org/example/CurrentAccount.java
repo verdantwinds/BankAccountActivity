@@ -17,4 +17,14 @@ public class CurrentAccount extends BankAccount {
         if (amount > maxWithdrawalAmount) throw new IllegalArgumentException("Withdrawal amount exceeds the maximum limit.");
         super.withdraw(amount);
     }
+
+    @Override
+    public String toString() {
+        return "CurrentAccount{" +
+                "balance=" + balance +
+                ", minimumBalance=" + minimumBalance +
+                ", accountHolderName='" + accountHolderName + '\'' +
+                ", maxWithdrawalAmount=" + maxWithdrawalAmount +
+                '}';
+    }
 }

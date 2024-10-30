@@ -15,4 +15,14 @@ public class SavingsAccount extends BankAccount {
     public void applyInterest() {
         balance += balance * interestRate;
     }
+
+    @Override
+    public String toString() {
+        return "SavingsAccount{" +
+                "balance=" + balance +
+                ", minimumBalance=" + minimumBalance +
+                ", accountHolderName='" + accountHolderName + '\'' +
+                ", interestRate=" + interestRate +
+                '}';
+    }
 }
